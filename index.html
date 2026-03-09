@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOLUTIVAS FF - Pinguino Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Bebas+Neue&family=Roboto+Mono:wght@400;700&display=swap');
+
+        :root {
+            --marron-oscuro: #3e2723;
+            --marron-base: #5d4037;
+            --cafe-claro: #8d6e63;
+            --arena: #d7ccc8;
+            --ocre: #bcaaa4;
+            --oro-ff: #ffb300;
+            --negro: #121212;
+        }
+
+        body {
+            background-color: var(--marron-oscuro);
+            background-image: url('fondo.png');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            color: var(--negro);
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .pinguino-card {
+            width: 1000px;
+            background: var(--arena);
+            border: 6px solid var(--marron-base);
+            border-radius: 4px;
+            box-shadow: 25px 25px 0px var(--marron-oscuro);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        .header-ff {
+            height: 280px;
+            border-bottom: 6px solid var(--marron-base);
+            background-image: url('banner.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .user-tag {
+            position: absolute;
+            bottom: -30px;
+            left: 50px;
+            background: var(--oro-ff);
+            padding: 10px 30px;
+            border: 4px solid var(--marron-oscuro);
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            transform: rotate(-2deg);
+        }
+
+        /* GRID PRINCIPAL */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 30px;
+            padding: 50px 30px 30px 30px;
+        }
+
+        /* PERFIL DANIEL */
+        .pinguino-profile {
+            background: var(--ocre);
+            border: 4px solid var(--marron-base);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pinguino-profile img {
+            width: 150px;
+            height: 150px;
+            border: 5px solid var(--oro-ff);
+            background: #fff;
+            margin-bottom: 15px;
+        }
+
+        /* BLOQUES DE TEXTO */
+        .info-panel {
+            background: var(--marron-base);
+            color: white;
+            padding: 25px;
+            border-radius: 2px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            border-right: 8px solid var(--oro-ff);
+        }
+
+        .info-panel h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 30px;
+            margin-top: 0;
+            color: var(--oro-ff);
+        }
+
+        /* VIDEO */
+        .video-container {
+            grid-column: 1 / -1;
+            background: var(--negro);
+            border: 6px solid var(--marron-base);
+            aspect-ratio: 16/9;
+            margin-bottom: 30px;
+        }
+
+        /* TABLA EVOLUTIVAS */
+        .evo-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border: 4px solid var(--marron-base);
+        }
+
+        .evo-table th {
+            background: var(--marron-base);
+            color: var(--oro-ff);
+            padding: 20px;
+            text-align: left;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px;
+        }
+
+        .evo-table td {
+            padding: 20px;
+            border: 2px solid var(--ocre);
+            font-size: 14px;
+        }
+
+        .evo-name {
+            font-weight: bold;
+            color: var(--marron-oscuro);
+            font-size: 18px;
+            display: block;
+        }
+
+        .evo-stats {
+            color: #d84315;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .footer {
+            background: var(--marron-base);
+            color: var(--arena);
+            text-align: center;
+            padding: 20px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="pinguino-card">
+    <div class="header-ff">
+        <div class="user-tag">PINGUINO_DANIEL.EXE</div>
+    </div>
+
+    <div class="layout-grid">
+        <aside>
+            <div class="pinguino-profile">
+                <img src="img1.png" alt="Pinguino Daniel">
+                <div style="font-family: 'Bebas Neue'; font-size: 28px;">DANIEL (EL PINGUINO)</div>
+                <div style="font-size: 12px; color: var(--marron-oscuro);">● RANGO: HEROICO 24/7</div>
+                <p style="font-size: 13px; margin-top: 10px;">"Si no es evolutiva al máximo, ni me hables. Analizando los atributos que de verdad rompen el chaleco."</p>
+            </div>
+        </aside>
+
+        <main>
+            <div class="info-panel">
+                <h2>EL PODER DE LAS EVOLUTIVAS</h2>
+                <p>¡Qué onda gente! Aquí Daniel, pero todos me dicen **Pinguino**. Si estás aquí es porque sabes que en Free Fire, una skin no es solo para verse bien; se trata de los atributos. Las armas evolutivas son la joya de la corona porque te dan esa velocidad de disparo o daño extra que decide quién se queda con el Booyah. Mi pareja y yo nos la pasamos viciados probando cada nivel de evolución para ver cuál rinde más en clasificatoria. Olvídate de los emotes, aquí venimos a hablar de penetración de armadura y daño letal.</p>
+            </div>
+
+            <div class="info-panel" style="background: var(--cafe-claro);">
+                <h2>POR QUÉ GASTAR TUS DIAMANTES?</h2>
+                <p>Mucha gente piensa que con una skin común basta, pero las evolutivas tienen habilidades especiales únicas. Por ejemplo, infligir más daño cuando el enemigo tiene poca vida o cuando disparas a las paredes de arena (Gloo). Esos pequeños porcentajes son los que te salvan cuando estás rusheando a corta distancia.</p>
+            </div>
+        </main>
+
+        <div class="video-container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eQMO0ys7ds0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div style="grid-column: 1 / -1;">
+            <div style="background: var(--oro-ff); padding: 10px 20px; font-family: 'Bebas Neue'; font-size: 25px; border: 4px solid var(--marron-base); border-bottom: none; display: inline-block;">
+                TOP ARSENAL EVOLUTIVO
+            </div>
+            <table class="evo-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Arma Evolutiva</th>
+                        <th>Análisis Técnico de Pinguino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="evo-name">MP40 - Cromado Galáctico</span>
+                            <span class="evo-stats">++ Vel. Disparo | + Pen. Armadura</span>
+                        </td>
+                        <td>Es la reina actual para el rush. Daniel confirma que su habilidad de daño extra cuando el enemigo tiene poca vida es letal para terminar enfrentamientos rápidos. Supera incluso a la Cobra Depredadora por sus atributos base.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="evo-name">M1014 - Destrucción Escorpión</span>
+                            <span class="evo-stats">++ Vel. Disparo | + Pen. Armadura</span>
+                        </td>
+                        <td>Para muchos, la mejor escopeta del juego. Su velocidad de recarga aumenta cuando tienes más de 3 balas, lo que te permite mantener la presión sin quedarte vendido en medio del enfrentamiento.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="evo-name">AK47 - Dragón Flama Azul</span>
+                            <span class="evo-stats">++ Vel. Disparo | + Daño</span>
+                        </td>
+                        <td>Un clásico que no muere. Aunque su habilidad (daño a paredes Gloo) no es la mejor, sus atributos la hacen increíblemente precisa para ser un AK. Es el arma que todo viciado debe tener en su colección.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="evo-name">FAMAS - Sonrisa Infernal</span>
+                            <span class="evo-stats">++ Daño | + Vel. Disparo</span>
+                        </td>
+                        <td>Si sabes usar la FAMAS a ráfagas, esta skin es una barbaridad. Su habilidad especial de daño adicional a enemigos en movimiento la hace perfecta para bajar gente que intenta escapar o rotar en campo abierto.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        BOOYAH! • SQUAD UP • PINGUINO DANIEL // ( Made with Carrd )
+    </div>
+</div>
+
+</body>
+</html>
